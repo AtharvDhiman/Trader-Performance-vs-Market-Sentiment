@@ -122,6 +122,32 @@ The application will open automatically in your browser at `http://localhost:850
 
 ---
 
+## 📊 Notebook Data Analysis & Visualizations
+
+In addition to the interactive dashboard, a comprehensive exploratory data analysis (EDA) was performed in the Jupyter Notebook [Trader_Performance_vs_Market_Sentiment.ipynb](notebooks/Trader_Performance_vs_Market_Sentiment.ipynb). Below are the key visualizations generated from the notebook along with their analytical findings:
+
+### 1. Cumulative PnL Growth Over Time
+Tracks the growth of cumulative net profit over time for the top 5 most profitable Hyperliquid traders in the dataset.
+![Cumulative PnL Growth Over Time](charts/cumulative_pnl_over_time.png)
+* **Description:** This figure demonstrates the compounding equity curves of the top traders. The upward trajectory across multiple years validates the viability and robustness of systematic strategies executing on Hyperliquid.
+
+### 2. Average Closed PnL by Market Sentiment
+Illustrates the average profit per trade under different Bitcoin sentiment categories (Extreme Fear to Extreme Greed).
+![Average Closed PnL by Market Sentiment](charts/avg_pnl_by_sentiment.png)
+* **Description:** Average profitability peaks in **Extreme Greed** ($67.89/trade) and **Fear** ($54.29/trade). This shows that market inflection points and extreme momentum phases generate the highest dollar payoffs for active traders.
+
+### 3. Win Rate (%) by Sentiment & Side
+Grouped bar chart analyzing the interaction between market sentiment and trade direction (BUY vs. SELL).
+![Win Rate by Sentiment & Side](charts/win_rate_by_sentiment_and_side.png)
+* **Description:** Short trades (`SELL` in orange) maintain high win rates (54% - 59%) across almost all sentiment regimes, peaking during Extreme Greed. Conversely, long trades (`BUY` in blue) exhibit low win rates (20% - 32%) but capture outsized payouts when they successfully trigger during Fear regimes.
+
+### 4. Trader Segmentation (Activity vs. Profitability)
+Scatter plot mapping the total number of trades executed against net realized PnL for all 32 traders.
+![Trader Segmentation Scatter](charts/trader_segmentation_scatter.png)
+* **Description:** Traders are divided into Low, Medium, and High Frequency segments. The size of the bubble corresponds to the trader's win rate. High frequency traders (green) cluster in the highly profitable top-right quadrant, indicating that systematic volume-based strategies yield more consistent alpha.
+
+---
+
 ## 🛠️ Technology Stack
 
 *   **Core Logic & Analytics:** Python 3.13, Pandas, NumPy
