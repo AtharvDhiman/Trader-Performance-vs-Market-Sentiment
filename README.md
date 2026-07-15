@@ -10,11 +10,22 @@ This repository serves as a professional assessment for the **Data Science Inter
 
 ---
 
-## 🖥️ Streamlit Dashboard Preview
+## 🖥️ Streamlit Dashboard & Analytics Preview
 
-Here is an overview of the interactive dashboard built to visualize the trader performance:
+Here is a visual overview of the interactive dashboard tabs showing the trader performance analytics:
 
+### 1. Dashboard Overview
+Key KPIs (Total Trades, Net PnL, Win Rate, Volume, Fees) and distribution plots for PnL, top coins, and daily trading volumes.
 ![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### 2. Sentiment Deep-Dive
+Grouped bar charts showing win rates and average PnL for BUY vs. SELL trades across sentiment regimes.
+![Sentiment Deep-Dive](screenshots/sentiment_deep_dive.png)
+
+### 3. Trader Segmentation
+Scatter plot of Trading Frequency vs. Net PnL along with segment summaries and profitable trader leaderboards.
+![Trader Segmentation](screenshots/trader_segmentation.png)
+
 
 ---
 
